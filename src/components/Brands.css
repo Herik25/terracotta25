@@ -1,0 +1,23 @@
+.brands-container {
+    margin-inline: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.brand-item {
+    padding: 20px;
+    box-shadow: 2px 2px 16px -11px #0000008c;
+    border-radius: 50%;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.brand-item img {
+    transition: 0.5s ease-in-out;
+}
+
+.brand-item:hover img {
+    transform:rotateY(180deg);
+}

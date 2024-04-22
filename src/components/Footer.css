@@ -1,0 +1,190 @@
+.footer {
+    position: relative;
+    background: #E5EDE9;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://creative-ishi.myshopify.com/cdn/shop/files/wave-pattern_copy.png?v=1680605126");
+    background-size: 900px 100px;
+}
+
+.wave#wave1 {
+    z-index: 10;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 12s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 10;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 30s linear infinite !important;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+.footer-content {
+    background-color: #E5EDE9;
+    min-height: 200px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-input-section {
+    margin-inline: 200px;
+    padding-block: 30px;
+    border-bottom: 1px solid #bbb;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-input-section .subscribe {
+    color: #556f5f;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.footer-input-section .input {
+    position: relative;
+}
+
+.footer-input-section input {
+    border: none;
+    outline: none;
+    padding: 15px 130px 15px 15px; 
+    width: 300px;
+    font-size: 16px;
+    border-radius: 35px;
+}
+
+.subscribeBtn button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-2px, 2.5px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #f6b76f;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.subscribeBtn button:hover {
+    background-color: #556f5f;
+    color: white;
+}
+
+.footer-input-section .icons {
+    display: flex;
+}
+
+.footer-input-section .icons div {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-input-section .icons div:hover {
+    background-color: #f6b76f;
+}
+
+.footer-input-section .icons .facebook {
+    background-color: #3B5999;
+}
+
+.footer-input-section .icons .instagram {
+    background-color: #CC2366;
+}
+
+.footer-input-section .icons .tiktok {
+    background-color: #000;
+}
+
+.footer-input-section .icons .snapchat {
+    background-color: yellow;
+}
+
+.footer-input-section .icons .twitter {
+    background-color: #00ACED;
+}
+
+.company-info {
+    margin-inline: 200px;
+    padding-block: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info .company-info-title {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #556f5f;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.company-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #556f5f;
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    margin-inline: 200px;
+    justify-content: space-between;
+    padding-block: 20px;
+}
+
+.copyright .cards {
+    display: flex;
+    align-items: center;   
+}
+
+.copyright .cards div {
+    margin-right: 5px;
+    /* background-color: #fff; */
+}

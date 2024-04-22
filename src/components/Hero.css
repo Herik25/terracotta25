@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80vh;
+  background: #B9C8CE;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 60px;
+}
+
+.hero-text {
+  /* transform: translateY(50px); */
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 750px;
+}
+
+.hero-text-subHeading {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 22px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.hero-text-heading {
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #556f5f;
+  margin-bottom: 30px;
+  line-height: 60px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.hero-text-desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 40px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.btn {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+}
+
+.btn .shopnow {
+  background-color: #fff;
+  color: #556f5f;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.btn .readmore {
+  background-color: #556f5f;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  transform: translateX(-22px);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  /* transform: translateY(50px); */
+}
+
+.hero-image img {
+  z-index: 1;
+}
+
+.hero-image .gif-container1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(120px);
+  z-index: 0;
+}
+
+.hero-text .gif-container2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100px);
+  z-index: 0;
+}
+
+section {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background: #B9C8CE;
+  overflow: hidden;
+}
+
+.wavey {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: url(https://creative-ishi.myshopify.com/cdn/shop/files/wave-pattern_copy_1.png?v=1680610084);
+  /* background-size: 600px 80px; */
+  background-repeat: repeat-x;
+}
+
+section .wavey.wave1 {
+  animation: wavey 20s cubic-bezier(.36, .45, .63, .53) infinite
+}
+
+@keyframes wavey {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.animated {
+  animation-name: animate-in;
+  animation-duration: 1s;  /* Adjust duration as needed */
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate-in {
+  from { opacity: 0; transform: translateY(-100px); }  /* Start from invisible and slightly shifted down */
+  to { opacity: 1; transform: translateY(0); }  /* Animate to full opacity and normal position */
+}

@@ -1,0 +1,87 @@
+.blog-section {
+    display: flex;
+    margin-inline: 200px;
+    margin-block: 50px;
+    margin-bottom: 150px;
+    overflow-x: scroll;
+}
+
+.blog-section::-webkit-scrollbar {
+    display: none;
+}
+
+.blog-card {
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.blog-image-container {
+    position: relative;
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.blog-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease-in-out;
+}
+
+.blog-card:hover .blog-image-container img {
+    transform: scale(1.1);
+}
+
+.blog-card-content {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding-block: 20px;
+    font-family: "Poppins", sans-serif;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.blog-card-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #556F5F;
+    color: white;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    padding: 7px 18px;
+    border-top-right-radius: 30px;
+}
+
+.blog-card-title {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #555f5f;
+    font-weight: 500;
+}
+
+.blog-card-desc {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #888;
+    font-weight: 300;
+    padding-inline: 50px;
+}
+
+.blog-card-link a{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    color: #555f5f;
+}
