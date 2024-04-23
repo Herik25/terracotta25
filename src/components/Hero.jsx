@@ -41,7 +41,7 @@ function Hero() {
         </div>
       </div>
       <section>
-        <div className=" wavey wavey1"></div>
+        <div className=" wavey wave1"></div>
       </section>
     </div>
   );
